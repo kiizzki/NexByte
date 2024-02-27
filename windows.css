@@ -99,11 +99,11 @@ section p {
 
 }
 
-section .writer-info p{
+section .writer-info p {
     margin: 0;
 }
 
-section .writer-info p > a{
+section .writer-info p>a {
     color: rgb(255, 255, 255);
     font-weight: 600;
 }
@@ -152,7 +152,7 @@ article p {
     font-weight: 500;
     line-height: 25px;
     color: white;
-}   
+}
 
 .share-post {
     margin: 50px 0;
@@ -372,18 +372,22 @@ h4 {
         z-index: 998;
     }
 
+    .header-nav .ava-nav a {
+        font-size: 1.5em;
+    }
+
     .header-nav.background-change {
         background-image: linear-gradient(90deg, rgb(154, 154, 231), rgb(225, 164, 225));
     }
-    
+
 
     .header-nav ul.show {
         border-top: 1px solid #ffffff;
         display: flex;
         background-image: linear-gradient(90deg, rgb(154, 154, 231), rgb(225, 164, 225));
-        top: 62px;
+        top: 61px;
         padding: 20px;
-}
+    }
 
     .hamburger-menu {
         display: block;
@@ -398,12 +402,17 @@ h4 {
         transition: 0.4s;
     }
 
+    .header-nav ul.show li a {
+        font-size: 1.5em;
+    }
+
     .header-nav ul li {
         width: 100%;
         text-align: center;
         padding: 10px 0;
     }
 }
+
 @media only screen and (max-width: 726px) {
 
     footer {
