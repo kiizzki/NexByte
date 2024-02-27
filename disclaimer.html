@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexByte | Windows</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="disclaimer.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"> -->
+    <link rel="shortcut icon" href="/favico/android-chrome-512x512.png" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <nav class="header-nav">
+        <div class="ava-nav">
+            <a href="index.html">
+                <h1>NexByte</h1>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <h1>Disclaimer</h1>
+
+        <p>Selamat datang di NexByte! Harap dicatat bahwa penggunaan dan akses atas situs web ini tunduk pada ketentuan
+            dan kondisi berikut ini. Dengan menggunakan situs web NexByte, Anda secara otomatis setuju untuk mematuhi
+            dan terikat oleh ketentuan-ketentuan ini. Jika Anda tidak setuju dengan salah satu ketentuan ini, kami
+            sarankan untuk tidak melanjutkan penggunaan situs ini.</p> <br>
+
+        <p> <b>1. Ketidakjaminan Konten:</b> <br>
+            Informasi yang disajikan di NexByte dimaksudkan untuk tujuan informasi umum. Meskipun kami berusaha sebaik
+            mungkin untuk memberikan konten yang akurat dan terkini, kami tidak memberikan jaminan atau garansi atas
+            keakuratan, kelengkapan, atau keandalan informasi tersebut. Penggunaan informasi dari situs ini sepenuhnya
+            menjadi tanggung jawab pengguna.</p> <br>
+
+        <p> <b>2.Perubahan Konten:</b> <br>
+            NexByte berhak untuk merubah, menghapus, atau menambahkan konten kapan saja tanpa pemberitahuan sebelumnya.
+            Kami tidak bertanggung jawab atas konsekuensi apapun yang timbul dari perubahan tersebut.</p> <br>
+
+        <p> <b>3. Tautan Eksternal:</b> <br>
+            Situs ini mungkin berisi tautan ke situs web eksternal yang bukan milik NexByte. Kami tidak memiliki kontrol
+            atas isi dan praktik privasi situs-situs tersebut, dan penggunaan mereka sepenuhnya berada di bawah tanggung
+            jawab pengguna.</p> <br>
+
+        <p> <b>4. Tanggung Jawab Hukum:</b> <br>
+            NexByte tidak bertanggung jawab atas kerugian atau kerusakan, baik yang bersifat langsung maupun tidak
+            langsung, yang timbul dari penggunaan atau akses situs web ini.</p> <br>
+
+        <p> <b>5. Perubahan pada Disclaimer:</b> <br>
+            NexByte berhak untuk memperbarui atau mengubah disclaimer ini tanpa pemberitahuan sebelumnya. Pengguna
+            disarankan untuk secara berkala meninjau halaman ini.</p> <br>
+
+        <p> Dengan menggunakan situs web NexByte, Anda mengakui dan menyetujui bahwa penggunaan situs ini sepenuhnya
+            menjadi tanggung jawab Anda. Jika Anda memiliki pertanyaan atau klarifikasi mengenai disclaimer ini, silakan
+            hubungi kami di [kontak@nexbyte.com]. Terima kasih atas pengertian dan partisipasi Anda.</p>
+    </section>
+
+    <footer>
+        <div class="footer-link-logo">
+            <h4>Social Media</h4>
+            <a href="https://www.instagram.com/kiizzki" class="ig" target="_blank"><i
+                    class="ph-thin ph-instagram-logo"></i></a>
+            <a href="https://twitter.com/yourbtchhhh" class="twitter" target="_blank"><i class="ph-thin ph-twitter-logo"></i></a>
+            <a href="https://www.youtube.com/channel/UCg-6QNEQrt4OVwSzW2jwtdg" class="yt" target="_blank"><i
+                    class="ph-thin ph-youtube-logo"></i></a>
+        </div>
+        <div class="footer-a">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <p>Copyright© 2024 <span class="footer-nexbyte"><a href="index.html">NexByte</a></span>. All Right Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navList = document.querySelector('.header-nav ul');
+            const headerNav = document.querySelector('.header-nav'); // Tambah baris ini
+
+            hamburgerMenu.addEventListener('click', function () {
+                navList.classList.toggle('show');
+                headerNav.classList.toggle('background-change'); // Tambah baris ini
+            });
+        });
+    </script>
+</body>
+
+</html>

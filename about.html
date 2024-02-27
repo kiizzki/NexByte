@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexByte | Home</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"> -->
+    <link rel="shortcut icon" href="/favico/apple-touch-icon.png" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <nav class="header-nav">
+        <div class="ava-nav">
+            <a href="index.html">
+                <h1>NexByte</h1>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>About Us</h1>
+        <p>Selamat datang di NexByte, rumahnya inovasi dan wawasan teknologi terkini. Kami adalah komunitas yang
+            didedikasikan untuk menyajikan informasi terbaru seputar perkembangan teknologi, memberikan pandangan
+            mendalam tentang tren industri, dan menggali potensi revolusi digital. NexByte hadir untuk menghubungkan
+            Anda dengan era teknologi mutakhir, memberikan panduan yang informatif, serta menjadi sumber inspirasi bagi
+            para pencinta teknologi. Bersama NexByte, mari kita jelajahi dunia yang penuh dengan terobosan canggih dan
+            kisah-kisah menarik di balik perkembangan teknologi masa kini.</p> <br>
+        <p>Tak hanya sebagai sumber berita terkini, NexByte juga bertekad untuk menjadi panduan praktis bagi para
+            pengguna teknologi, baik yang berpengalaman maupun yang baru memasuki ranah digital. Tim ahli kami, yang
+            terdiri dari individu-individu berbakat dan berkomitmen, bekerja keras untuk menyajikan artikel-artikel
+            informatif, tutorial, dan ulasan produk yang dapat membantu Anda memahami, mengikuti, dan mengambil manfaat
+            penuh dari inovasi teknologi.</p> <br>
+        <p>Di NexByte, kami percaya bahwa setiap orang memiliki peran penting dalam merangkul masa depan yang didorong
+            oleh teknologi. Oleh karena itu, kami mengundang Anda untuk bergabung dalam perjalanan ini, berbagi
+            pengetahuan, dan menjadi bagian dari komunitas yang bersemangat untuk memahami serta menggali potensi tak
+            terbatas dari era digital ini. Bersama NexByte, mari kita temukan perspektif baru, peluang yang menantang,
+            dan menjadi pelopor dalam merangkul revolusi teknologi yang tak ada batasnya.</p>
+    </section>
+
+    <footer>
+        <div class="footer-link-logo">
+            <h4>Social Media</h4>
+            <a href="https://www.instagram.com/kiizzki" class="ig" target="_blank"><i
+                    class="ph-thin ph-instagram-logo"></i></a>
+            <a href="https://twitter.com/yourbtchhhh" class="twitter"  target="_blank"><i
+                    class="ph-thin ph-twitter-logo"></i></a>
+            <a href="https://www.youtube.com/channel/UCg-6QNEQrt4OVwSzW2jwtdg" class="yt" target="_blank"><i
+                    class="ph-thin ph-youtube-logo"></i></a>
+        </div>
+        <div class="footer-a">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <p>Copyright© 2024 <span class="footer-nexbyte"><a href="#">NexByte</a></span>. All Right Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navList = document.querySelector('.header-nav ul');
+            const headerNav = document.querySelector('.header-nav'); // Tambah baris ini
+
+            hamburgerMenu.addEventListener('click', function () {
+                navList.classList.toggle('show');
+                headerNav.classList.toggle('background-change'); // Tambah baris ini
+            });
+        });
+    </script>
+</body>
+
+</html>

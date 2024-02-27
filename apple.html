@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexByte | Apple</title>
     <link rel="stylesheet" href="apple.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="./favico/apple-touch-icon.png" type="image/x-icon">
+        rel="stylesheet"> -->
+    <link rel="shortcut icon" href="/favico/apple-touch-icon.png" type="image/x-icon">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
     <nav class="header-nav">
         <div class="ava-nav">
-            <h1>NexByte</h1>
+            <a href="index.html">
+                <h1>NexByte</h1>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
         <ul>
             <li><a href="index.html" class="home">Home</a></li>
-            <li><a href="apple.html">Apple</a></li>
-            <li><a href="android.html">Android</a></li>
-            <li><a href="windows.html">Windows</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <section>
         <article>
             <h1>Mendalam ke Dalam Dunia Apple: Fakta Menarik yang Perlu Anda Ketahui</h1>
-            <p><i class="ph-fill ph-seal-check"></i>Admin <i class="ph-fill ph-dot-outline"></i> February 4, 2024 <i
-                    class="ph-fill ph-dot-outline"></i> 4 mins read</p>
+            <div class="writer-info">
+                <p><a href="https://www.instagram.com/kiizzki" target="_blank">Rizki</a> <span><img
+                            src="./assets/verif.png" alt="verified logo"></p>
+                <p></span> February 4, 2024 <i class="ph-fill ph-dot-outline"></i> 4 mins read</p>
+            </div>
             <div class="article-image">
                 <img src="./assets/180927122050-apple-logo-gfx.jpg" alt="gambar-apple">
             </div>
@@ -91,28 +104,29 @@
                 memberikan
                 warna pada dunia teknologi ini.
             </p>
+            <div class="share-post">
+                <h3>Share This:</h3>
+                <ul>
+                    <li><a href=""><i class="ph-fill ph-facebook-logo"></i></a></li>
+                    <li><a href=""><i class="ph-fill ph-instagram-logo"></i></a></li>
+                    <li><a href=""><i class="ph-fill ph-whatsapp-logo"></i></a></li>
+                    <li><a href=""><i class="ph-fill ph-telegram-logo"></i></a></li>
+                    <li><a href=""><i class="ph-fill ph-twitter-logo"></i></a></li>
+                    <li><a href=""><i class="ph-fill ph-copy-simple"></i></a></li>
+                </ul>
+            </div>
         </article>
-
-        <div class="share-post">
-            <h3>Share This:</h3>
-            <ul>
-                <li><a href=""><i class="ph-fill ph-facebook-logo"></i></a></li>
-                <li><a href=""><i class="ph-fill ph-instagram-logo"></i></a></li>
-                <li><a href=""><i class="ph-fill ph-whatsapp-logo"></i></a></li>
-                <li><a href=""><i class="ph-fill ph-telegram-logo"></i></a></li>
-                <li><a href=""><i class="ph-fill ph-twitter-logo"></i></a></li>
-                <li><a href=""><i class="ph-fill ph-copy-simple"></i></a></li>
-            </ul>
-        </div>
-
     </section>
 
     <footer>
         <div class="footer-link-logo">
             <h4>Social Media</h4>
-            <a href="https://www.instagram.com/kiizzki" class="ig" target="_blank"><i class="ph-thin ph-instagram-logo"></i></a>
-            <a href="https://twitter.com/yourbtchhhh" class="twitter" target="_blank"><i class="ph-thin ph-twitter-logo"></i></a>
-            <a href="https://www.youtube.com/channel/UCg-6QNEQrt4OVwSzW2jwtdg" class="yt" target="_blank"><i class="ph-thin ph-youtube-logo"></i></a>
+            <a class="ig" href="https://www.instagram.com/kiizzki" class="ig" target="_blank"><i
+                    class="ph-thin ph-instagram-logo"></i></a>
+            <a href="https://twitter.com/yourbtchhhh" class="twitter" target="_blank"><i
+                    class="ph-thin ph-twitter-logo"></i></a>
+            <a href="https://www.youtube.com/channel/UCg-6QNEQrt4OVwSzW2jwtdg" class="yt" target="_blank"><i
+                    class="ph-thin ph-youtube-logo"></i></a>
         </div>
         <div class="footer-a">
             <nav class="footer-nav">
@@ -126,7 +140,20 @@
             <p>Copyright© 2024 <span class="footer-nexbyte"><a href="#">NexByte</a></span>. All Right Reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navList = document.querySelector('.header-nav ul');
+            const headerNav = document.querySelector('.header-nav'); // Tambah baris ini
 
+            hamburgerMenu.addEventListener('click', function () {
+                navList.classList.toggle('show');
+                headerNav.classList.toggle('background-change'); // Tambah baris ini
+            });
+        });
+
+    </script>
+</body>
 </body>
 
 </html>
